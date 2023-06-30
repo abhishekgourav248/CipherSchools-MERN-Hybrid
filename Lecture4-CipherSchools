@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Title</title>
+</head>
+<!-- Html tags -->
+<body>
+    <h1>My first Heading</h1>
+    <h2>My heading 2</h2>
+    <h3>My heading 3</h3>
+    <h4>My heading 4</h4>
+    <h5>My heading 5</h5>
+    <h6>My heading 6</h6>
+    <p>My first page</p>
+    <a href="https://cipherschools.com">Go to cipherschools</a>
+    <img src="" alt="Np img">
+    <button>Click me</button>
+    <blockquote>Hello</blockquote>
+    <address>
+        Taught by  <u> Shantanu Shubham. </u><br>
+        Visit me on linkedin: <br>
+    </address>
+
+    <ul>
+        <li>Coffee</li>
+        <li>Milk</li>
+        <li>Tea</li>
+    </ul>
+    <ol>
+        <li>Coffee</li>
+        <li>Milk</li>
+        <li>Tea</li>
+    </ol>
+    <dl>
+        <dt>Coffee</dt>
+        <dd>This is a brown drink</dd>
+        <dt>Milk</dt>
+        <dd>This is a white drink</dd>
+        <dt>Tea</dt>
+        <dd>This is a brown drink</dd>
+    </dl>
+</body>
+</html>

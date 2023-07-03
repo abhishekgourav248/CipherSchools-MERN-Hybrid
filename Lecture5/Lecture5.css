@@ -1,0 +1,35 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+#mypara, h1, p{ /*combination selector*/
+    text-align: center;
+    color:brown;
+}
+
+
+div p{
+    background-color:yellow;
+}
+
+div>p{
+    background-color: blue;
+    color: white;
+}
+
+div ~ p{
+    background-color: teal;
+    color: white;
+}
+div+p{
+    background-color: gray;
+    color: white;
+}
+
+
+p:hover{
+    background-color: yellow;
+}
+
+div ~ p::first-letter {
+    color: black;
+}

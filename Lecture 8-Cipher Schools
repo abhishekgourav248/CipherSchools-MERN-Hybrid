@@ -1,0 +1,65 @@
+<!-- DOM Traversal -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>My Page Title</h1>
+    <p>Caption goes here</p>
+    <article class="first_article">
+        <h2>List of amazing fruits</h2>
+        <p>Must eat fruits</p>
+        <div class="wrapper-1">
+            <ui class="apple-list">
+                <li class="apple">Apple</li>
+                <li class="orange">orange</li>
+                <li class="avocado">Avocado</li>
+                <li class="grape">Grapes</li>
+                <ul>
+                    <li class="type-1">Moon drops</li>
+                    <li>Sultana</li>
+                    <li>Concorde</li>
+                    <li>Crimson seed</li>
+                </ul>
+                <li class="banana">Banana</li>
+            </ui>
+            <button class="btn-1">Read full list</button>
+        </div>
+    </article>
+    <article class="second_articel">
+        <h2>Amazing places in kenya</h2>
+        <p>Must visit place in Kenya</p>
+        <div class="wrapper-2">
+            <ul class="places-list">
+                <li>Masai Mara</li>
+                <li>Diana Beach</li>
+                <li>Waranu Beach</li>
+                <li>Amboseli national park</li>
+                <li>Lake Nakuru</li>
+            </ul>
+            <button class="btn-2">Read full list</button>
+        </div>
+    </article>
+</body>
+<script>
+    const heading = document.querySelectorAll("h2");
+    const firstheading = heading[0];
+    const secondHeading = heading[1];
+    const applelist  = document.querySelector(".apple-list");
+    console.log(applelist.children);
+    console.log(applelist.firstChild);
+    console.log(applelist.lastChild);
+    console.log(applelist.parentElement);
+    console.log(applelist.parentNode);
+    const btn1 = document.querySelector('.btn-1')
+    console.log(btn1.closest("main"));
+    const   orange = document.querySelector(".orange");
+    const apple = orange.previousElementSibling;
+    const avocado = orange.nextElementSibling;
+    console.log(apple);
+    console.log(avocado);
+</script>
+</html>

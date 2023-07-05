@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" name ="val">
+        <input type="text" name="name"  value="Abhishek">
+    </form>
+    <div>
+        <p name="cipher-para">
+            para1
+        </p>
+        <p>para 2</p>
+    </div>
+    <p>
+        para3
+    </p>
+    <p>
+        para4
+    </p>
+    <div>
+        <a href="https://www/cipherschools.com">CipherSchools</a>
+        <a href="hhtps://www.google.com">Google</a>
+    </div>
+    
+</body>
+<script>
+    document.write("Abhishek")
+    document.writeln("Gourav")
+    document.writeln(document.val)
+    document.writeln(document.val.name)
+    document.writeln(document.val.name.value)
+</script>
+</html>

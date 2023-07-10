@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title">Document</title>
+</head>
+<body>
+    <main>
+        <div>
+            <button id="time_btn" onclick="showTime()">The Time is : </button>
+            <p id="show_time"></p>
+        </div>
+        <form action="">
+            <input type="text" id="firstName" onchange="upperCase()">
+        </form>
+        <div onmousedown="mDown(this)" onmouseup="mUp(this)" style="background-color: red;width: 100px;height: 100px;">
+            Mouse over me;
+        </div>
+
+    </main>
+
+</body>
+
+</html>
+
+<script>
+    function changeText(id){
+        id.innerHTML='This is after click';
+    }
+    function showTime(){
+        let date = new Date();
+        document.getElementById("show_time").innerHTML = date;
+    }
+    function upperCase(){
+        val = document.getElementById('firstName').value;
+        document.getElementById('firstName').value = val.toUpperCase();
+    }
+    function mOver(id){
+        id.innerHTML = "Thank you"
+    }
+    function mOut(id){
+        id.innerHTML = "Mouse over me;"
+    }
+    function mDown(id){
+        id.style.backgrounColor = 'cyan';
+        id.innerHTML = 'release me';
+    }
+    function mUp(id){
+        id.style.backgrounColor = 'cyan';
+        id.innerHTML = 'thank you';
+    }
+
+
+</script>

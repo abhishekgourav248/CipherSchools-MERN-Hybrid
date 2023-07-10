@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let person = {
+            firstName: "Abhishek",
+            lastName: "Gourav",
+            getFullName: function (){
+                return `The name of the person is ${person.firstName} ${person.lastName}`
+            },
+            phoneNumber:{
+                mobile:'1234567890',
+                landline:"23443332",
+            },
+        }
+        console.log(person.getFullName());
+        console.log(person.phoneNumber.landline);
+        function person (firstName,lastName){
+            this.firstName = firstName;
+            this.lastName = lastName;
+        }
+
+        let person1 = new person("Abhishek","Gourav");
+        let person2 = new person("Ajit","Kumar");
+
+        console.log(person1.firstName);
+        console.log(person2.lastName);
+        const coder = {
+            isStudying :false,
+            printIntroduction:function(){
+                console.log(`my name is ${this.name}`,`Am i studying ?:${this.isStudying}`);
+            }
+        };
+        const me = Object.create(coder);
+        me.name = "Abhishek"
+        me.isStudying = true;
+        me.printIntroduction();
+
+
+        class Vehicle{
+            constructor(name,maker,engine){
+                this.name = name;
+                this.maker = maker;
+                this.engine = engine;
+            }
+            getDetails(){
+                return `the name of vehicle is ${this.name}`;
+
+            }
+        }
+        let v1 = new Vehicle("Creta","Hyundai","2500cc");
+        let v2 = new Vehicle("Q5","Audi","3000cc");
+        console.log(v1.name);
+        console.log(v2.maker);
+        console.log(v1.getDetails());
+
+
+        function Vehicle(name,maker,engine){
+                this.name = name;
+                this.maker = maker;
+                this.engine = engine;
+            }
+        Vehicle.prototype.getDetails = function (){
+            return (`the name of vehicle is ${this.name}`);
+        }
+
+        let v1 = new Vehicle("Creta","Hyundai","2500cc");
+        let v2 = new Vehicle("Q5","Audi","3000cc");
+        console.log(v1.name);
+        console.log(v2.maker);
+        console.log(v1.getDetails());
+
+
+        class Person{
+            constructor(fname,lname){
+                this.fname = name;
+                this.lname = lname;
+            }
+            getDetails = function (){
+                return `firstname is : ${this.fname} and lastname is : ${this.lname}`;
+            }
+        }
+        class Student extends Person{
+            constructor(fname,lname,rollNo){
+                super(fname,lname);
+                this.rollNo = rollNo;
+            }
+            getDetails = function (){
+                return `firstname is : ${this.fname} and lastname is : ${this.lname} and the roll no is ${this.rollNo}`;
+            }
+        }
+
+        let p1 = new Student("Abhishek","Gourav","18D001H")
+        console.log(p1.getDetails());
+    </script>
+</body>
+</html>
